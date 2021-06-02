@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{%extends 'book/home.html'%}
+{%block body_block%}
+<div class="container">
+
+        <div class="row">
+            <div class="col-4"></div>
+
+                <div class="col-4">
+                <form action="" method="post">
+                    <div class="card bg-light mb-3" >
+                            <div class="card-header" align="center">
+                                UPDATE THE DATA
+                            </div>
+                        <div class="card-body">
+                        <h5 class="card-title">{%csrf_token%}
+                            {{form.as_p}}</h5>
+                            <input type="submit" value="update" class="btn btn-outline-info">
+                        </div>
+                    </div>
+                </form>
+                    </div>
+            <div class="col-4"></div>
+        </div>
+</div>
+{%endblock%}

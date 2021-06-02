@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%extends 'book/home.html'%}
+{%block body_block%}
+<h1 align="CENTER">BOOKS ARCHIVES</h1>
+<div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+                <div class="col-4">
+                    <form action="" method="post">
+                        {%csrf_token%}
+                        {{form.as_p}}
+                        <input type="submit" class="btn btn-outline-info" value="ADD BOOK ">
+                    </form>
+                </div>
+            <div class="col-4"></div>
+        </div>
+</div>
+{%endblock%}
